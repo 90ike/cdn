@@ -1,0 +1,63 @@
+#fep-footer{display:none;}
+#fep-header>div>div:first-child{display:none;}
+#fep-header{margin:-10px;border:none;color:#666;}
+#fep-header strong{display:none;}
+#fep-menu{display:inline-block;margin:10px 0;border-bottom:1px solid #eaeaea;}
+.fep-button{padding: 5px 20px;border:1px solid #eaeaea;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;background:#F8F8F8;color:#666!important;font-weight:400;font-size:14px;cursor:pointer;}
+.fep-button:hover{background:#666;color:#fff!important;}
+#fep-menu .fep-button,.fep-button-active{float:left;display:block;margin-top:10px;margin-right:8px;padding:3px 12px;border:1px solid #eaeaea;border-bottom:none;-webkit-border-radius:0;-moz-border-radius:0;border-radius:3px 3px 0 0;background:#F8F8F8;color:#666!important;text-decoration:none;font-weight:400;font-size:16px;}
+#fep-menu .fep-button-active,#fep-menu .fep-button:hover{margin-bottom:-1px;padding-bottom:4px;border-bottom:none;background:#fff;color:#666;font-size:16px;}
+#fep-content{margin:10px 0;padding:10px;width:auto;height:auto;color:#666;}
+#fep-content .avatar{padding:0;vertical-align: middle;width:20px;height:20px;}
+#fep-content-single-heads .avatar,#fep-content .fep-message-table .avatar{vertical-align: middle;width:38px;height:38px;}
+.fep-odd-even>div:nth-child(odd){background-color:#EDF1F2;}
+.fep-odd-even>div:nth-child(even){background-color:#fff;}
+.fep-table>div{display:block;padding:10px;}
+.fep-action-table{margin-top:-10px;margin-bottom:10px;}
+.fep-action-table select{margin-right:10px;margin-left:-10px;padding:5px 10px;border-color:#eaeaea;border-radius:3px;color:#666;}
+.fep-table .fep-message-date{color:#999;font-size:14px;}
+#fep-content a{color:#666;text-decoration:none;}
+.fep-unread-class{position:absolute;top:-1px;left:10px;padding:1px;height:16px;min-width:36px;border-radius:2px;background-color:#E74C3C;box-shadow:none;color:#fff;text-align:center;font-weight:400;font-size:12px;line-height:16px;}
+.fep-table .fep-message-excerpt{font-size:14px;opacity:.5;}
+.fep-align-centre{margin-top:20px;text-align:left;}
+.fep-pagination>li>a,.fep-pagination>li>span{position:relative;float:left;margin-right:5px;padding:4px 11px;border:none;border-radius:30px;background-color:#fff;color:#09B1B9;text-decoration:none;font-size:16px;line-height:1.42857143;}
+.fep-pagination>li:first-child>a,.fep-pagination>li:first-child>span{margin-left:0;border-bottom-left-radius:30px;border-top-left-radius:30px;}
+.fep-pagination>li:last-child>a,.fep-pagination>li:last-child>span{border-top-right-radius:30px;border-bottom-right-radius:30px;}
+#fep-content .fep-pagination>li>a:focus,#fep-content .fep-pagination>li>a:hover,#fep-content .fep-pagination>li>span:focus,#fep-content .fep-pagination>li>span:hover{background-color:#09B1B9;color:#fff;}
+#fep-content .fep-pagination>.active>a,#fep-content .fep-pagination>.active>a:focus,#fep-content .fep-pagination>.active>a:hover,#fep-content .fep-pagination>.active>span,#fep-content .fep-pagination>.active>span:focus,#fep-content .fep-pagination>.active>span:hover{z-index:2;border-color:#fff;background-color:#09B1B9;color:#fff;cursor:default;}
+#fep-content .fep-pagination>.disabled>a,#fep-content .fep-pagination>.disabled>a:focus,#fep-content .fep-pagination>.disabled>a:hover,#fep-content .fep-pagination>.disabled>span,#fep-content .fep-pagination>.disabled>span:focus,#fep-content .fep-pagination>.disabled>span:hover{border-color:#ddd;background-color:#fff;color:#777;cursor:not-allowed;}
+select.fep-filter-heads{padding:5px;border-color:#eaeaea;}
+#fep-content-single-heads {border: 0;}
+.fep-message .fep-message-title-heading{padding:10px;width:100%;border:none;border-radius:0;background-color:#fff;font-weight:400;font-size:22px;line-height:22px;}
+.fep-message .fep-message-title-heading.participants {font-size: 14px;padding: 0 10px;}
+.fep-per-message{margin:15px 5px;padding:0;border:1px solid #eaeaea;}
+.fep-per-message .fep-message-title{position:relative;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:10px;width:auto;border:none;border-radius:0;background-color:#f8f8f8;font-weight:400;font-size:16px;cursor:pointer;}
+.fep-per-message .fep-message-title .date{position:absolute;top:10px;right:10px;display:block;padding-left:10px;width:30%;text-align:right;font-weight:400;font-size:14px;}
+#fep-content .wp-editor-container{border:1px solid #E5E5E5;}
+#fep-content form,#fep-content p{margin:10px;text-indent:0;}
+.fep-form-field{margin-top:20px;}
+.front-end-pm-form .fep-button{min-width:100px;background:#09B1B9;color:#fff!important;}
+.front-end-pm-form .fep-button:hover{background:#666;color:#fff!important;}
+.fep-attachment-field{font-size:14px;}
+#fep-content input[type=text]{padding:10px;width:60%;min-width:250px;border:1px solid #eaeaea;}
+#fep-content input#token-input-blocked_users{padding:6px 10px;}
+.fep-error,.fep-success,.fep-wp-error{width:auto;}
+#fep-notification-bar{margin:10px auto;max-width:1120px;color:#666;font-weight:400;font-size:14px;}
+.fep-font-red{color:#E74C3C;}
+.fep-field ul li{margin-left:0;list-style:none;}
+#fep-messagebox-search-form input,
+#fep-directory-search-form input,
+#fep-announcementbox-search-form input {padding: 10px;width: 100%;border: 1px solid #eaeaea;}
+#fep-content .fep_block_unblock_user{margin:0 10px;padding:3px 8px;border-radius:2px;background:#E14D43;color:#fff;font-size:12px;}
+#fep-content .fep-column-send_message a{margin:0 10px;padding:3px 8px;border-radius:2px;background:#09B1B9;color:#fff;font-size:12px;}
+#fep-content .fep-column-name{font-size:16px;}
+.fep-odd-even {border: 1px solid #EAEAEA;}
+#fep-content .token-input-list-facebook{width:100%;height:auto!important;border:1px solid #eaeaea;font-size:14px;}
+.fep-table .fep-column-author, .fep-table .fep-column-date, .fep-table .fep-column-title {line-height: 20px;}
+.fep-avatar-p {height: 40px;}
+@media screen and (max-width:480px){
+    .fep-action-table>div>div{width:96%;}
+    #fep-menu .fep-button,.fep-button,.fep-button-active{width:auto;}
+    #fep-content input[type=text]{width:96%;}
+    .user-header .poptip{display:none;}
+}

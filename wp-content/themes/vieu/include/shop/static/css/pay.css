@@ -1,0 +1,553 @@
+.circular {
+    -webkit-animation: rotate 2s linear infinite;
+    animation: rotate 2s linear infinite;
+    height: 28px;
+    -webkit-transform-origin: center center;
+    -ms-transform-origin: center center;
+    transform-origin: center center;
+    width: 28px;
+    margin: auto
+}
+
+.circular .path {
+    width: 100%;
+    height: 100%;
+    stroke-dasharray: 1,200;
+    stroke-dashoffset: 0;
+    -webkit-animation: dash 1.5s ease-in-out infinite;
+    animation: dash 1.5s ease-in-out infinite;
+    stroke: #757575;
+    stroke-linecap: round
+}
+
+@-webkit-keyframes rotate {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes rotate {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@-webkit-keyframes dash {
+    0% {
+        stroke-dasharray: 1,200;
+        stroke-dashoffset: 0
+    }
+
+    50% {
+        stroke-dasharray: 89,200;
+        stroke-dashoffset: -35px
+    }
+
+    100% {
+        stroke-dasharray: 89,200;
+        stroke-dashoffset: -124px
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dasharray: 1,200;
+        stroke-dashoffset: 0
+    }
+
+    50% {
+        stroke-dasharray: 89,200;
+        stroke-dashoffset: -35px
+    }
+
+    100% {
+        stroke-dasharray: 89,200;
+        stroke-dashoffset: -124px
+    }
+}
+.toast{
+    opacity: 0; 
+}
+.toast_body {
+    background: #2c3747;
+    border-radius: 3px;
+    color: #fff;
+    text-align: center;
+    padding: 20px 50px;
+    align-items:center;
+}
+
+.toast_body .icon .modia {
+    font-size: 28px
+}
+
+.toast_body .text {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.toast_body .text p {
+    margin: 0;
+}
+
+.toast.it {
+    padding: 20px 40px;
+}
+
+.toast.it .text {
+    margin-top: 10px;
+    position: relative;
+}
+
+.toast.icon {
+    padding: 25px
+}
+
+.toast.fs {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-52%);
+   }
+
+.toast.el {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%)
+}
+
+.modal-box {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+    background: rgba(0,0,0,.6)
+}
+
+.modal-box .modal {
+    position: absolute;
+    width: 400px;
+    height: 404px;
+    background: #fff;
+    border-radius: 3px;
+    top: 50%;
+    left: 50%;
+    margin-left: -202px;
+    margin-top: -200px;
+    z-index: 1;
+    padding: 60px 50px 40px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.modal-box .modal .title {
+    font-size: 28px;
+    color: #2a2a2a;
+    font-weight: 700
+}
+
+.modal-box .modal .content {
+    margin-top: 29px;
+    font-size: 18px;
+    color: #2a2a2a;
+    height: 166px;
+    overflow-y: auto
+}
+
+.modal-box .modal .options-btns {
+    margin-top: 35px
+}
+
+.modal-box .modal .options-btns a {
+    width: 50%;
+    color: #fff;
+    font-weight: 700
+}
+
+.custom-modal-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.7);
+    z-index: 999;
+    -webkit-animation: fade-ins .5s;
+    animation: fade-ins;
+    animation-duration: .5s;
+}
+
+.custom-modal-box .modal {
+    max-width: 350px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    height: auto;
+    background: #fff;
+    display: block;
+    bottom: auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.custom-modal-box .modal .close-modal {
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    color: #000;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    display: block;
+}
+
+.custom-modal-box .modal .close-modal:hover {
+    opacity: .6
+}
+
+.custom-modal-box .modal .close-modal .modia {
+    display: inline-block;
+    width: 18px;
+    height: 1px;
+    background: #333;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.custom-modal-box .modal .close-modal .modia:after {
+    content: '';
+    display: block;
+    width: 18px;
+    height: 1px;
+    background: #333;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg)
+}
+
+.custom-modal-box .modal .submit,.custom-modal-box .modal .submit-btn {
+    margin-top: 45px
+}
+
+.custom-modal-box .modal .submit-tips {
+    text-align: center;
+    font-size: 12px;
+    color: #333;
+    margin-top: 5px
+}
+
+.custom-modal-box .modal .submit-close {
+    text-align: center;
+    font-size: 14px;
+    color: #e04a1c;
+    margin-top: 15px;
+    cursor: pointer
+}
+
+.custom-modal-box .modal .submit a,.custom-modal-box .modal .submit button,.custom-modal-box .modal .submit-btn a,.custom-modal-box .modal .submit-btn button {
+    display: block;
+    height: 43px;
+    line-height: 43px;
+    width: 100%;
+    background: #e04a1c;
+    border-radius: 3px;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px
+}
+
+.custom-modal-box .modal .submit {
+    margin-top: 20px
+}
+
+.custom-modal-box .modal .feed-content {
+    padding: 60px
+}
+
+.custom-modal-box .modal .feed-content>.title {
+    font-size: 28px;
+    color: #2a2a2a;
+    font-weight: 700
+}
+
+.custom-modal-box .modal .feed-content .feed-type {
+    margin-top: 35px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around
+}
+
+.custom-modal-box .modal .feed-content .feed-type span {
+    font-size: 14px;
+    color: #2a2a2a;
+    font-weight: 700
+}
+
+.custom-modal-box .modal .feed-content .feed-type a {
+    font-size: 14px;
+    padding: 3px 22px;
+    border: #e2e2e2 solid 1px;
+    border-radius: 3px;
+    color: #2a2a2a;
+    margin-left: 12px
+}
+
+.custom-modal-box .modal .feed-content .feed-type a:first-child {
+    margin-left: 23px
+}
+
+.custom-modal-box .modal .feed-content .feed-type a.active {
+    border-color: #e04a1c;
+    color: #e04a1c
+}
+
+.custom-modal-box .modal .feed-content .feed-text {
+    margin-top: 20px
+}
+
+.custom-modal-box .modal .feed-content .feed-text textarea {
+    border: #e2e2e2 solid 1px;
+    border-radius: 3px;
+    padding: 18px 15px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 300px;
+    height: 130px;
+    resize: none;
+    font-size: 14px;
+    color: #9b9b9b;
+    font-weight: 700
+}
+
+.custom-modal-box .modal .feed-content .row {
+    margin-top: 20px
+}
+
+.custom-modal-box .modal .feed-content .row .label {
+    font-size: 14px;
+    font-weight: 700;
+    color: #2a2a2a
+}
+
+.custom-modal-box .modal .feed-content .row .bottom-line-input-box {
+    margin-top: 13px
+}
+
+.custom-modal-box .modal .feed-content .row .bottom-line-input-box input {
+    font-size: 14px;
+    color: #2a2a2a
+}
+
+.custom-modal-box .modal .popup-wppay-qrcode {
+    padding-top: 30px;
+    z-index: 999;
+}
+.custom-modal-box .modal .popup-wppay-qrcode .tab-list{
+    padding: 0;
+    text-align: center;
+    display: none;
+}
+.custom-modal-box .modal .popup-wppay-qrcode.alipay .m-alipay .btn{
+     background: #00a0e8;
+     width: 70%;
+}
+.custom-modal-box .modal .popup-wppay-qrcode.alipay .m-alipay{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.custom-modal-box .modal .popup-wppay-qrcode.alipay .m-alipay-desc{
+    padding-bottom: 20px;
+    color: #00a0e8;
+}
+.custom-modal-box .modal .popup-wppay-qrcode.alipay .pay-body{
+    text-align: center;
+    background: #00a0e8;
+    /* padding: 20px; */
+    color: #fff;
+    margin-top: 20px;
+}
+.custom-modal-box .modal .popup-wppay-qrcode.weixinpay .pay-body{
+    text-align: center;
+    background: #22ab38;
+    /* padding: 20px; */
+    color: #fff;
+    margin-top: 20px;
+}
+.custom-modal-box .modal .popup-wppay-qrcode .pay-body .active{
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+.custom-modal-box .modal .popup-wppay-qrcode .pay-body .qr-code>img{padding: 10px;background: #fff;}
+.custom-modal-box .modal .popup-wppay-qrcode:before {
+    content: '';
+    display: inline-block;
+    height: 30px;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.custom-modal-box .modal .popup-wppay-qrcode .pay-body .account{
+    padding: 20px 0;
+}
+.custom-modal-box .modal .popup-wppay-qrcode .desc{
+    width: 100%;
+}
+.custom-modal-box .modal .alipay:before {
+    background-image: url(./alipay.png);
+}
+
+.custom-modal-box .modal .weixinpay:before {
+    background-image: url(./weixinpay.png);
+}
+
+.custom-modal-box .modal .pay-button-box {
+    padding: 12px 30px;
+    z-index: 999;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 0 8px #0d2133;
+    border-radius: 4px;
+}
+
+.custom-modal-box .modal .pay-button-box .pay-item {
+    width: 100%;
+    height: 60px;
+    border: 0;
+    border-bottom: 1px solid #f7f6f6;
+    cursor: pointer;
+    font-size: 1.25rem;
+    display: inline-block;
+    line-height: 60px;
+    text-align: center;
+}
+
+.custom-modal-box .modal .pay-button-box .pay-item span {
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+    vertical-align: middle;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.custom-modal-box .modal .pay-button-box .pay-item i.alipay {
+    display: inline-block;
+    width: 50px;
+    height: 40px;
+    vertical-align: middle;
+    background: url(./alic.png) center no-repeat;
+}
+
+.custom-modal-box .modal .pay-button-box .pay-item i.weixinpay {
+    display: inline-block;
+    width: 50px;
+    height: 40px;
+    vertical-align: middle;
+    background: url(./wxc.png) center no-repeat;
+}
+
+
+#down-pass{
+    color: #b5b5b5;
+    font-size: 12px;
+}
+#down-pass::selection{background:#ebebeb;color: #b5b5b5;}
+.erphp-wppay {
+    font-size: 14px;
+    margin: 10px auto;
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 8px 8px 8px 28px;
+    border: dashed #fa832f 1px;
+    background: #FFF url(../../../../static/img/locked.gif) no-repeat 8px 15px;
+}
+.wppay {
+    font-size: 14px;
+    position: relative;
+    display: block;
+    padding: 15px 15px 15px 28px;
+    border: dotted #4e89ff 4px;
+    background: #ffffff url(../../../../static/img/locked.gif) no-repeat 8px 22px;
+}
+.payment_box{
+    border-radius: 2px;
+    font-size: 13px;
+}
+.payment_box p strong{
+    color: #fa832f;
+}
+.payment_box p s{
+    color: #fa692f;
+}
+
+.erphp-wppay .wppay-loader {
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: text-bottom;
+    cursor: pointer;
+    padding: 0 10px;
+    line-height: initial;
+}
+
+
+@media (max-width: 720px) {
+    .modal-box .modal {
+        width:320px;
+        margin-left: -160px
+    }
+
+    .custom-modal-box .modal {
+        width: 90%
+    }
+
+    .toast {
+        padding: 10px 20px
+    }
+
+    .toast .icon .modia {
+        font-size: 28px
+    }
+
+    .toast .text {
+        font-size: 16px;
+        font-weight: 700;
+        white-space: nowrap
+    }
+   
+    .payment_box{
+        padding: 0;
+        font-size: 12px;
+    }
+    .custom-modal-box .modal .popup-wppay-qrcode .tab-list{
+        display:block;
+    }
+
+}
